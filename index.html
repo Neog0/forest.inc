@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company - Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.1-web/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
+
+<body>
+<div class="container">
+    <div class="btn-box">
+        <button id="btn1" onclick="openAboutUs()"><i class="fa-solid fa-circle-info"></i>About Us</button>
+        <button id="btn2" onclick="openHome()"><i class="fa-solid fa-house"></i>Home</button>
+        <button id="btn3" onclick="openServices()"><i class="fa-solid fa-handshake"></i>Services</button> 
+        <button id="btn4" onclick="openContactUs()"><i class="fa-solid fa-envelope"></i>Contact Us</button>      
+    </div>
+    <div id="content1" class="content">
+        <div class="content-left">
+            <h1>Forest</h1>
+            <p>Forest Inc. is an Filipino multinational corporation and technology company headquartered in Quezon, Manila. The company provides 
+                online services, advertising, search engine technology, cloud computing, computer software, e-commerce, and consumer electronics.</p>
+            <div class="new">
+                <a href="developer.html" target="_blank"><i class="fa-solid fa-gamepad"></i>The Developer</a>
+            </div>
+        </div>
+        <div class="content-right">
+            <img src="images/greenbg.png.png">
+        </div>
+    </div>
+    <div id="content2" class="content">
+        <div class="content-left2">
+            <h1>Let's plant some!</h1>
+            <h2>We plant a tree for every 10 searches you have made.</h2>
+            <p>Forest Inc. start this project way back 2019, where it plants a tree for every 10 searches a new user have made.
+            <a href="#">Get Started</a>
+        </div>
+        <div class="content-right">
+            <img src="images/website.png">
+        </div>
+    </div>
+    <div id="content3" class="content">
+        <div class="content-left">
+            <h1>Our Service</h1>
+            <p>The company provides online services, advertising, search engine technology, cloud computing, computer software, e-commerce, and consumer electronics.</p>
+            <div class="icons">
+                <a><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a><i class="fa-light fa-user"></i></a>
+                <a><i class="fa-brands fa-slack"></i></a>
+                <a><i class="fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+        <div class="content-right3">
+            <img src="images/collagegreen.png">
+        </div>
+    </div>
+    <div id="content4" class="content">
+         <form action="" class="contact-left">
+            <div class="contact-left-title">
+                <h2>Send a message</h2>
+                <hr>
+            </div>
+            <input type="text" name="name" placeholder="Your name" class="contact-inputs" required>
+            <input type="email" name="email" placeholder="Your email" class="contact-inputs" required>  
+            <textarea name="message" placeholder="Your message" class="contact-inputs" required></textarea>
+            <button type="submit" class="button">Submit<i class="fa-solid fa-arrow-right"></i></button>
+        </form>
+    </div>
+
+    <script>
+        var content1 = document.getElementById("content1");
+        var content2 = document.getElementById("content2");
+        var content3 = document.getElementById("content3");
+        var content4 = document.getElementById("content4");
+        var btn1 = document.getElementById("btn1");
+        var btn2 = document.getElementById("btn2");
+        var btn3 = document.getElementById("btn3");
+        var btn4 = document.getElementById("btn4");
+
+        function openAboutUs(){
+            content1.style.transform = "translateX(0)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            btn1.style.color = "#663399";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            btn4.style.color = "#000";
+            content1.style.transitionDelay = "0.3s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+        function openHome(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(0)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(100%)";
+            btn2.style.color = "#663399";
+            btn1.style.color = "#000";
+            btn3.style.color = "#000";
+            btn4.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0,3s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0s";
+        }
+        function openServices(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(0)";
+            content4.style.transform = "translateX(100%)";
+            btn3.style.color = "#663399";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn4.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0.3s";
+            content4.style.transitionDelay = "0s";
+        }
+        function openContactUs(){
+            content1.style.transform = "translateX(100%)";
+            content2.style.transform = "translateX(100%)";
+            content3.style.transform = "translateX(100%)";
+            content4.style.transform = "translateX(0)";
+            btn4.style.color = "#663399";
+            btn1.style.color = "#000";
+            btn2.style.color = "#000";
+            btn3.style.color = "#000";
+            content1.style.transitionDelay = "0s";
+            content2.style.transitionDelay = "0s";
+            content3.style.transitionDelay = "0s";
+            content4.style.transitionDelay = "0.3s";
+        }
+
+    </script>
+
+
+</div>
+
+</body>
+</html>
